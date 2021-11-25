@@ -10,13 +10,12 @@ class Quiz extends Component {
     console.log(quizData.quiz_questions[0].instruction_text);
   }
 
-  render() {
-    var data = quizData.quiz_questions.map((item) => (
-      <div>{item.instruction_text}</div>
-    ));
+   render() {
     return (
       <div>
-        <div className="QuizQuestion">{data}</div>
+        <div className="QuizQuestion">
+          {quizData.quiz_questions[0].instruction_text}
+        </div>
       </div>
     );
   }
