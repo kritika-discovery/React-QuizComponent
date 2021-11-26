@@ -13,7 +13,7 @@ class QuizQuestion extends Component {
           </section>
           <section className="buttons">
             <ul>
-              <li> {this.props.quiz_question.answer_options[0]}</li>
+                        <button>{this.props.button_text}</button>
             </ul>
           </section>
         </main>
@@ -23,3 +23,5 @@ class QuizQuestion extends Component {
 }
 
 export default QuizQuestion;
+
+//   <li> {this.props.quiz_question.answer_options[0]}</li>
